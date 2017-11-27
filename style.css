@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*STYLE*/
+body {
+	margin: 5px;
+	background-color: #549dd5;
+	overflow: hidden;
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+	position: relative;
+}
+
+.king {
+    height: 80%;
+	margin: 5% auto;
+	z-index: 10;
+	position: relative;
+	display: flex;
+}
+
+.ghost1 {
+	height: 24%;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	display: none;
+}
+
+.ghost2 {
+	height: 27%;
+	position: absolute;
+	top: 70%;
+	left: 80%;
+	display: none;
+}
+
+.ghost3 {
+	height: 23%;
+	position: absolute;
+	top: 40%;
+	left: 60%;
+	display: none;
+}
+
+.ghost4 {
+	height: 28%;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	display: none;
+}
+
+.ghost5 {
+	height: 24%;
+	position: absolute;
+	top: 5%;
+	left: 70%;
+	display: none;
+}
+
+.ghost6 {
+	height: 26%;
+	position: absolute;
+	top: 0;
+	left: 40%;
+	display: none;
+}
+
+.ghost7 {
+	height: 22%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+.ghost8 {
+	height: 30%;
+	position: absolute;
+	top: 30%;
+	right: 0;
+	display: none;
+}
+
+.ghost9 {
+	height: 25%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: none;
+}
+
+.ghost10 {
+	height: 20%;
+	z-index: 2;
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	display: none;
+}
+
+.ghost11 {
+	height: 26%;
+	position: absolute;
+	top: 2%;
+	left: 10%;
+	display: none;
+}
+
+.ghost12 {
+	height: 24%;
+	position: absolute;
+	top: 35%;
+	left: 70%;
+	display: none;
+}
+
+.ghost13 {
+	height: 28%;
+	position: absolute;
+	top: 65%;
+	left: 65%;
+	display: none;
+}
+
+.ghost14 {
+	height: 28%;
+	position: absolute;
+	top: 65%;
+	left: 15%;
+	display: none;
+}
+
+.ghost15 {
+	height: 24%;
+	position: absolute;
+	top: 45%;
+	left: 2%;
+	display: none;
+}
+
+.ghost16 {
+	height: 22%;
+	position: absolute;
+	top: 0;
+	left: 55%;
+	display: none;
+}
+
+.ghost17 {
+	height: 29%;
+	position: absolute;
+	top: 2%;
+	left: 25%;
+	display: none;
+}
+
+.ghost18 {
+	height: 32%;
+	position: absolute;
+	top: 3%;
+	right: 5%;
+	display: none;
+}
+
+.ghost19 {
+	height: 28%;
+	position: absolute;
+	bottom: 2%;
+	left: 30%;
+	display: none;
+}
+
+.ghost20 {
+	height: 25%;
+	position: absolute;
+	top: 25%;
+	left: 6%;
+	display: none;
+}
+
+
+@media only screen and (max-width: 960px) {
+	body {
+		background-color: #d45354;
+	}
+	.ghost1 {
+		display: block;
+	}
+	.ghost13 {
+		display: block;
+	}
+	.ghost4 {
+		display: block;
+	}
+	.ghost2 {
+		display: block;
+	}
+	.ghost8 {
+		display: block;
+	}
+	.ghost11 {
+		display: block;
+	}
+	.ghost15 {
+		display: block;
+	}
+}
+@media only screen and (max-width: 768px){
+	body {
+		background-color: #935ca5;
+	}
+	.ghost5 {
+		display: block;
+	}
+	.ghost19 {
+		display: block;
+	}
+	.ghost14 {
+		display: block;
+	}
+	.ghost7 {
+		display: block;
+	}
+	.ghost10 {
+		display: block;
+	}
+	.ghost18 {
+		display: block;
+	}
+}
+	
+@media only screen and (max-width: 480px){
+	body {
+		background-color: #69bf66;
+	}
+	.ghost17 {
+		display: block;
+	}
+	.ghost3 {
+		display: block;
+	}
+	.ghost16 {
+		display: block;
+	}
+	.ghost6 {
+		display: block;
+	}
+	.ghost9 {
+		display: block;
+	}
+	.ghost12 {
+		display: block;
+	}
+	.ghost20 {
+		display: block;
+	}
+}
